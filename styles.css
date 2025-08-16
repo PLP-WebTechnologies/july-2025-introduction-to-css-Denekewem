@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.site-header {
+  background-color: #877678;
+  color: white;
+  padding: 0.05rem 0;
+  border-bottom: 1px solid #524A49;
+}
+
+.header-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+
+.navbar {
+  background-color: #333;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar a {
+  color: white;
+  padding: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #555;
+  transition: background-color 0.3s;
+}
+
+.navbar a:last-child {
+  border-bottom: none;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+
+.content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #914F41;
+}
+
+
+.demo-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.demo-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+}
+
+
+@media (min-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    border-bottom: none;
+    border-right: 1px solid #555;
+  }
+  
+  .navbar a:last-child {
+    border-right: none;
+  }
+  
+  .content {
+    flex-direction: row;
+  }
+  
+  .card {
+    flex: 1;
+  }
+  
+  .demo-btn {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-content {
+    padding: 2rem 0;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
